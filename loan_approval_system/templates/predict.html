@@ -1,0 +1,64 @@
+<form method="post">
+    Gender
+    <select name = "Gender"> 
+        <option value="" disabled selected>Select Sex</option>
+        <option value = "Male"> Male</option>
+        <option value = "Female" > Female</option>
+    </select>
+
+    Married
+    <select name = "Married"> 
+        <option value="" disabled selected>Select Marrital Status</option>
+        <option value = "Yes"> Yes</option>
+        <option value = "No" > No</option>
+    </select>
+
+    Dependents
+    <select name = "Dependents"> 
+        <option value="" disabled selected>No of Dependents</option>
+        <option value = "LOW"> Low</option>
+        <option value = "HIGH" > High</option>
+    </select>
+
+    Eduction
+    <select name = "Education"> 
+        <option value="" disabled selected>Select Eduction</option>
+        <option value = "Graduate"> Graduate</option>
+        <option value = "Not Graduate" > Not Graduate</option>
+    </select>
+
+    Self Employed
+    <select name = "Self_Employed"> 
+        <option value="" disabled selected>Employement Type</option>
+        <option value = "Yes"> Self Employed</option>
+        <option value = "No" > Not Self Employed</option>
+    </select>
+    
+    Loan Amount <input type="number" name = "Loan_Amount" placeholder="Enter your loan amount " required>
+    Loan Amount Term <input type="number" name = "Loan_Amount_Term" placeholder="Enter your loan amount Term " required>
+    Credit History <input type="number" name = "Credit_History" placeholder="Enter your Credit_History " required>
+
+
+
+    <label>Property Area</label>
+    <select name = "Property_Area">
+        <option value= "" disabled selected>Property Type</option>
+        <option value = "semiurban">Semi Urban</option>
+        <option value = "Urban">Urban</option>
+        <option value = "Rural">Rural</option>
+    </select>
+
+
+    Family Income <input type="number" name = "Family_Income" placeholder="Enter your Family Income " required>
+
+    <button type="submit">Predict </button>
+</form>
+
+<h3>
+    {% if pred %}
+    Your Loan has been approved {{pred}}
+    {% endif %}
+</h3>
+
+
+<a href="/">Back to Dashboard</a>

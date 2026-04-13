@@ -1,0 +1,116 @@
+{
+    "5001": {
+        "name": "Tushar",
+        "pin": 5000,
+        "balance": 43000.0,
+        "transactions": [
+            {
+                "type": "withdraw",
+                "amount": 500.0,
+                "timestamp": "2026-02-23 15:23:01.318427"
+            },
+            {
+                "type": "deposit",
+                "amount": 20000.0,
+                "timestamp": "2026-02-23 15:23:18.692444"
+            },
+            {
+                "type": "deposit",
+                "amount": 20000.0,
+                "timestamp": "2026-02-23 15:23:49.920629"
+            },
+            {
+                "type": "withdraw",
+                "amount": 2000.0,
+                "timestamp": "2026-02-23 15:23:58.878103"
+            }
+        ],
+        "transfer_transactions": [
+            {
+                "type": "send",
+                "account_no": "5002",
+                "amount": 5000.0,
+                "name": "Sagar",
+                "timestamp": "2026-02-23 15:37:48.043700"
+            },
+            {
+                "type": "receive",
+                "account_no": "640297",
+                "amount": 1000.0,
+                "name": "priyanshu",
+                "timestamp": "2026-02-23 15:46:24.546032"
+            },
+            {
+                "type": "send",
+                "account_no": "640297",
+                "amount": 500.0,
+                "name": "priyanshu",
+                "timestamp": "2026-02-23 15:47:46.623190"
+            }
+        ],
+        "failed_attempts": 3,
+        "is_locked": false,
+        "lock_time": null,
+        "withdraw_limit": 20000,
+        "deposit_limit": 20000
+    },
+    "5002": {
+        "name": "Sagar",
+        "pin": 1000,
+        "balance": 15000.0,
+        "transactions": [],
+        "transfer_transactions": [
+            {
+                "type": "receive",
+                "account_no": "5001",
+                "amount": 5000.0,
+                "name": "Tushar",
+                "timestamp": "2026-02-23 15:37:48.043700"
+            }
+        ],
+        "failed_attempts": 0,
+        "is_locked": false,
+        "lock_time": null,
+        "withdraw_limit": 20000,
+        "deposit_limit": 20000
+    },
+    "640297": {
+        "name": "priyanshu",
+        "pin": 1000,
+        "balance": 49500.0,
+        "transactions": [],
+        "transfer_transactions": [
+            {
+                "type": "send",
+                "account_no": "5001",
+                "amount": 1000.0,
+                "name": "Tushar",
+                "timestamp": "2026-02-23 15:46:24.546032"
+            },
+            {
+                "type": "receive",
+                "account_no": "5001",
+                "amount": 500.0,
+                "name": "Tushar",
+                "timestamp": "2026-02-23 15:47:46.624201"
+            }
+        ],
+        "failed_attempts": 1,
+        "is_locked": false,
+        "lock_time": null,
+        "withdraw_limit": 20000,
+        "deposit_limit": 20000
+    },
+    "501608": {
+        "name": "shiv",
+        "pin": "40510175845988f13f6162ed8526f0b09f73384467fa855e1e79b44a56562a58",
+        "balance": 50000.0,
+        "transactions": [],
+        "transfer_transactions": [],
+        "failed_attempts": 0,
+        "is_locked": false,
+        "lock_time": null,
+        "withdraw_limit": 1000000.0,
+        "deposit_limit": 20000
+    }
+}

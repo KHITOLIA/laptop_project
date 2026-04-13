@@ -1,0 +1,33 @@
+<form method="post">
+    Age: <input type="number" name = 'age' placeholder="Enter your Age" required>
+    Sex:
+    <select name = 'sex'>
+        <option value="disabled selected">Select Gender</option>
+        <option value = 'female'>Female</option>
+        <option value = 'male'>Male</option>
+    </select>
+    BMI: <input type = "number" name = 'bmi' placeholder="Enter your bmi" required>
+    Children: <input type  = "number" name = 'children' placeholder="Enter your no of child" required>
+    Smoker
+     <select name = 'smoker'>
+        <option value="disabled selected">Select</option>
+        <option value = 'yes'>Yes</option>
+        <option value = 'no'>No</option>
+    </select>
+
+    Region:
+     <select name = 'region'>
+        <option value="disabled selected">Select Region</option>
+        <option value = 'southwest'>South West</option>
+        <option value = 'southeast'>South East</option>
+        <option value = 'northwest'>North West</option>
+        <option value = 'northeast'>North East</option>
+    </select>
+    <br></br>
+    <button type="submit">Predict Premium</button>
+</form>
+<h3>
+    {% if pred %}
+    Your Medical Insurance: ₹{{pred}}
+    {% endif %}
+</h3>
