@@ -1,0 +1,12 @@
+<title>Deposit Money</title>
+<form method= "POST">
+    Amount <input type="number" name="amount" placeholder="Enter the amount " required>
+    <button type="submit">Submit</button>
+</form>
+
+{% if msg %}
+<h3>{{msg}}</h3>
+{% endif %}
+
+<br>
+<a href="/dashboard">Back to Dashboard</a>

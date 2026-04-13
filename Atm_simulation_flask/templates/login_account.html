@@ -1,0 +1,12 @@
+<a href="/">Home Page</a>
+
+<h2> Login</h2>
+{% if error %}
+<p style="color:red;">{{ error }}</p>
+{% endif %}
+
+<form method= "POST">
+    Account No: <input type="number" name = "account_no" required><br>
+    Pin: <input type="number" name = "pin" required><br>
+    <button type="submit">Login</button>
+</form>
